@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auromate IA - Tu CFO Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -206,7 +206,11 @@
             top: 0;
             left: 0;
         }
+        .whatsapp-button {
+             background-color: #25D366;
+        }
         .whatsapp-button:hover {
+             background-color: #1DA851;
              box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4); 
         }
         
@@ -248,7 +252,6 @@
     <nav id="navbar" class="fixed w-full z-20 top-0 transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#inicio" class="text-3xl font-extrabold text-blue-600">Auromate IA</a>
-            <!-- Menú de escritorio -->
             <div class="hidden md:flex space-x-6">
                 <a href="#soluciones" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium">Soluciones</a>
                 <a href="#ventajas" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-base font-medium">Ventajas</a>
@@ -258,14 +261,12 @@
             </div>
             <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg cta-button">Chatea con Auro</a>
             
-            <!-- Botón de Menú Móvil (Hamburguesa) -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-800 hover:text-blue-600 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </div>
-        <!-- Menú desplegable móvil -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <a href="#soluciones" class="block text-gray-700 hover:bg-gray-100 py-3 px-6">Soluciones</a>
             <a href="#ventajas" class="block text-gray-700 hover:bg-gray-100 py-3 px-6">Ventajas</a>
@@ -404,12 +405,14 @@
                 <div id="pricing-b2c" class="pricing-card-container grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left">
                         <h3 class="text-2xl font-bold text-gray-800">Auro Basic</h3>
-                        <p class="text-5xl font-extrabold my-4">$9 <span class="text-lg font-medium text-gray-500">/mes</span></p>
+                        <p class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold my-4">$12.000 <span class="text-lg font-medium text-gray-500">COP/mes</span></p>
                         <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integración con Whatsapp</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Coaching financiero</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Registro de ingresos y egresos en su memoria</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Recomendaciones a final de mes</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Coaching financiero personalizado</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Registro de ingresos y gastos</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Recordatorios</li>
+                            <li class="flex items-start text-gray-400"><svg class="w-5 h-5 text-red-400 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Sin alertas financieras</li>
+                            <li class="flex items-start text-gray-400"><svg class="w-5 h-5 text-red-400 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Sin reportes automáticos</li>
                         </ul>
                         <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
@@ -418,11 +421,13 @@
                     </div>
                     <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left">
                         <h3 class="text-2xl font-bold text-gray-800">Auro Pro</h3>
-                        <p class="text-5xl font-extrabold my-4">$15 <span class="text-lg font-medium text-gray-500">/mes</span></p>
+                        <p class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold my-4">$18.000 <span class="text-lg font-medium text-gray-500">COP/mes</span></p>
                         <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo Auro Básico</li>
-                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Más capacidad</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reportes y recomendaciones semanales</li>
+                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reporte financiero mensual</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Mayor capacidad de procesamiento</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Recomendaciones de hábitos</li>
+                             <li class="flex items-start text-gray-400"><svg class="w-5 h-5 text-red-400 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>Sin alertas financieras personales</li>
                         </ul>
                         <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
@@ -432,12 +437,12 @@
                     <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left border-2 border-green-600 shadow-xl relative">
                         <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs font-semibold px-4 py-1 rounded-full">MÁS POPULAR</span>
                         <h3 class="text-2xl font-bold text-gray-800">Auro Elite</h3>
-                        <p class="text-5xl font-extrabold my-4">$18 <span class="text-lg font-medium text-gray-500">/mes</span></p>
+                        <p class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold my-4">$25.000 <span class="text-lg font-medium text-gray-500">COP/mes</span></p>
                         <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo Auro Pro</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>2 conexiones de Auro con tus aplicaciones</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Automatizaciones</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Registro de ingresos y egresos en base de datos</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Alertas financieras</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reportes semanales</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Análisis predictivo de gastos</li>
                         </ul>
                         <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
                              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
@@ -446,47 +451,19 @@
                     </div>
                 </div>
 
-                <div id="pricing-b2b" class="pricing-card-container grid grid-cols-1 md:grid-cols-3 gap-8 hidden">
-                    <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left">
-                        <h3 class="text-2xl font-bold text-gray-800">Esencial</h3>
-                        <p class="text-5xl font-extrabold my-4">$79 <span class="text-lg font-medium text-gray-500">/mes</span></p>
+                <div id="pricing-b2b" class="pricing-card-container flex justify-center hidden">
+                     <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left md:w-2/3 lg:w-1/2">
+                        <h3 class="text-2xl font-bold text-gray-800">Auromate Enterprise</h3>
+                        <p class="text-4xl md:text-5xl font-extrabold my-4">Personalizado</p>
+                        <p class="text-gray-500 mb-6">Una solución a la medida de las necesidades de tu empresa.</p>
                         <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
-                           <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Análisis y reportes automáticos</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Alertas de flujo de caja</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Conexión con 1 sistema contable</li>
-                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Soporte estándar por WhatsApp</li>
-                        </ul>
-                        <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
-                            Chatea con Auromate
-                        </a>
-                    </div>
-                     <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left border-2 border-blue-600 shadow-xl relative">
-                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full">RECOMENDADO</span>
-                        <h3 class="text-2xl font-bold text-gray-800">Profesional</h3>
-                        <p class="text-5xl font-extrabold my-4">$99 <span class="text-lg font-medium text-gray-500">/mes</span></p>
-                        <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo del plan Esencial</li>
-                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Auditor IA y revisión de errores</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Alertas avanzadas de impuestos</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Soporte prioritario por WhatsApp</li>
-                        </ul>
-                        <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
-                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
-                            Chatea con Auromate
-                        </a>
-                    </div>
-                    <div class="pricing-card bg-white p-8 rounded-2xl flex flex-col text-left">
-                        <h3 class="text-2xl font-bold text-gray-800">Corporativo</h3>
-                        <p class="text-5xl font-extrabold my-4">$120 <span class="text-lg font-medium text-gray-500">/mes</span></p>
-                         <ul class="space-y-3 mb-8 text-gray-600 flex-grow">
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo del plan Profesional</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integraciones avanzadas con múltiples apps</li>
-                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Acceso a API</li>
+                           <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todas las funciones de Auromate</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integraciones avanzadas y acceso a API</li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Consultoría estratégica IA</li>
                             <li class="flex items-start"><svg class="w-5 h-5 text-green-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Soporte dedicado y SLA</li>
                         </ul>
                         <a href="https://wa.me/message/NPMGOGVPACEFN1?src=qr" target="_blank" class="mt-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 w-full rounded-lg text-lg cta-button whatsapp-button text-center flex items-center justify-center gap-2">
-                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91s-4.45-9.91-9.92-9.91zM17.13 15.44c-.21.12-.76.38-1.09.22-.26-.12-.88-.88-1-1.03s-.12-.22 0-.33c.12-.12.26-.33.39-.47.1-.12.16-.22.22-.33.06-.12 0-.22-.06-.33-.06-.12-.53-.65-.72-.88-.19-.23-.38-.19-.53-.19h-.12c-.12 0-.33.06-.47.22-.15.16-.59.59-.59 1.44 0 .85.6 1.66.68 1.78.08.12 1.18 1.81 2.86 2.53.39.16.71.26.97.33.44.12.85.1.97-.06.15-.19.59-.68.68-.88.09-.21.09-.38.06-.47s-.15-.16-.33-.28z"/></svg>
                             Chatea con Auromate
                         </a>
                     </div>
